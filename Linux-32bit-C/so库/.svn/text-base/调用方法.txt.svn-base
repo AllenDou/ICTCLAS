@@ -1,0 +1,5 @@
+Step1:设置libICTCLAS2011.so所在的路径(本例子中的路径为/root/ICTCLAS2011/linux_c_sample)
+[root@localhost linux_c_sample]#export LD_LIBRARY_PATH=/root/ICTCLAS2011/linux_c_sample
+Step2:编译生成结果，如下所示：
+[root@localhost linux_c_sample]# g++ -o test Example.cpp -DOS_LINUX -lICTCLAS2011 -B /root/ICTCLAS2011/linux_c_sample
+g++ -o test Example.cpp -DOS_LINUX -lICTCLAS2011 -B /home/ICTCLAS2011/linux_c_sample
